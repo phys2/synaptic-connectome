@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+
+  <title>Cola.js/Cytoscape.js</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" />
+
+  <!-- polyfills so the demo works on old browsers, like IE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
+  <script src="https://unpkg.com/bluebird@3.5.2/js/browser/bluebird.js"></script>
+  <script src="https://unpkg.com/whatwg-fetch@3.0.0/dist/fetch.umd.js"></script>
+
+  <!-- libs used by demo -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
+  <script src="https://unpkg.com/webcola@3.3.8/WebCola/cola.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.14.4/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/tippy.js@2.6.0/dist/tippy.all.js"></script>
+
+  <!-- cy libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.29.2/cytoscape.min.js"></script>
+  <!-- <script src="../../js/cytoscape.min.js"></script> -->
+  <script src="https://unpkg.com/cytoscape-cola@2.2.3/cytoscape-cola.js"></script>
+  <script src="https://unpkg.com/cytoscape-popper@1.0.2/cytoscape-popper.js"></script>
+  <!-- cy extension for canvas -->
+  <script src="https://unpkg.com/cytoscape-canvas/dist/cytoscape-canvas.js"></script>
+
+  <!-- custom data -->
+  <script src="data.js"></script>
+  <script src="cy-style.js"></script>
+  <script src="prot-infos.js"></script>
+  <script src="prot-interactors.js"></script>
+
+  <!-- background image -->
+  <script>let bg_image_src = "public/bg-image.svg";</script>
+
+</head>
+
+<body>
+  <div id="cy"></div>
+
+  <span class="fa fa-bars toolbar-toggle" id="toolbar-toggle"></span>
+
+  <div id="toolbar" class="toolbar">
+
+    <span id="title">Synaptic Connectome Viewer</span>
+    <div>Interactive graph of the synaptic connectome associated with NRX-T178-PTPRs (Thivaios et al., 2024).
+    </div>
+    <div>Graph developed with Cytoscape: Shannon P et al. Cytoscape: a software environment for integrated models of biomolecular interaction networks
+Genome Research 2003 Nov; 13(11):2498-504
+    </div>
+    <div id="hint">Hint: Double click/tap to reset the graph.</div>
+    <div id="prot-infos">
+      Click on a protein for more details...
+    </div>
+  </div>
+  </div>
+  <script src="code.js"></script>
+
+</body>
+
+</html>
