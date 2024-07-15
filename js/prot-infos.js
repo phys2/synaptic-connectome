@@ -740,6 +740,7 @@ let protInfos = {
         description: ["Germ cell-specific gene 1-like protein"],
         gene_name: ["Gsg1l"],
         "mass_(kda)": [36],
+        reference: ["data published in Perozzo et al. 2023 (PMID: 37884493)"],
     },
     NOE1: {
         graph_id: ["NOE1"],
